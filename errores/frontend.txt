@@ -1,1 +1,1 @@
-encontre un error en el archivo en el template libro.tpl
+encontre un error en el archivo en el template libro.tpl,ya esta echo
