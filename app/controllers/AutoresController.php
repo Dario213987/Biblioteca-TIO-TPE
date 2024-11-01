@@ -3,15 +3,15 @@
     require_once('app/views/AutoresView.php');
     class AutoresController {
         private $model;
-        private $view;
+        private $vista;
         function __construct(){
             $this->model= new AutoresModel();
-            $this->view= new AutoresView();
+            $this->vista= new AutoresView();
         }
 
         function index(){
             $autores=$this->model->all();
-            $this->view->verAutores($autores);
+            $this->vista->verAutores($autores);
         }
     }
 ?>
