@@ -5,12 +5,10 @@
                 try{
                     $conexion = $this->crearConexion();
                     $conexion->beginTransaction();
-                        $query = $conexion -> prepare('SELECT id, nombre, biografia, imagen FROM autores ORDER BY nombre ASC');
+                        $query = $conexion -> prepare('SELECT id, nombre, biografia, imagen FROM autores');
                         $query -> execute();
                         $autores = $query -> fetchAll(PDO::FETCH_OBJ);
-
                     $conexion->commit();
-
                     return $autores;
                 }catch(PDOException $e){
                     $conexion->rollback();
