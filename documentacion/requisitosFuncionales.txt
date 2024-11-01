@@ -1,1 +1,2 @@
 Acá irian los requisitos funcionales, preferiblemente no en un txt
+Se agregó un nuevo requisito funcional
